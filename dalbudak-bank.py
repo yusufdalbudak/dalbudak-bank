@@ -87,6 +87,7 @@ def musteri_menu():
     4) Para Transferi
     5) Şifre Değiştir
     6) Hesap Özeti
+    7) Faiz Hesapla
     Q) Çıkış
     """)
     return input("Lütfen bir işlem seçiniz: ")
@@ -123,6 +124,8 @@ def uygulama():
                         sifre_degistir(musteri)
                     elif islem == "6":
                         musteri.hesap_ozeti()
+                    elif islem == "7":
+                        musteri.faiz_hesapla()
                     elif islem.upper() == "Q":
                         break
                     else:
